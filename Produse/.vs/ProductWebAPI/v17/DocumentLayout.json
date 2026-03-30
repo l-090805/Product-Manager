@@ -1,0 +1,135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\falau\\source\\repos\\ManageProductsApp\\Produse\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EA663989-644B-403B-88E0-A518688DBE7C}|ProductWebAPI.csproj|c:\\users\\falau\\source\\repos\\manageproductsapp\\produse\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA663989-644B-403B-88E0-A518688DBE7C}|ProductWebAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA663989-644B-403B-88E0-A518688DBE7C}|ProductWebAPI.csproj|c:\\users\\falau\\source\\repos\\manageproductsapp\\produse\\cleanproductsjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA663989-644B-403B-88E0-A518688DBE7C}|ProductWebAPI.csproj|solutionrelative:cleanproductsjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{458CD528-14BC-582B-6F01-0BEBFC8E582C}|..\\BlazorWASM\\BlazorWASM.csproj|c:\\users\\falau\\source\\repos\\manageproductsapp\\blazorwasm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA663989-644B-403B-88E0-A518688DBE7C}|ProductWebAPI.csproj|c:\\users\\falau\\source\\repos\\manageproductsapp\\produse\\controllers\\productitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA663989-644B-403B-88E0-A518688DBE7C}|ProductWebAPI.csproj|solutionrelative:controllers\\productitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{458CD528-14BC-582B-6F01-0BEBFC8E582C}|..\\BlazorWASM\\BlazorWASM.csproj|c:\\users\\falau\\source\\repos\\manageproductsapp\\blazorwasm\\pages\\manageproductsdialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{458CD528-14BC-582B-6F01-0BEBFC8E582C}|..\\BlazorWASM\\BlazorWASM.csproj|c:\\users\\falau\\source\\repos\\manageproductsapp\\blazorwasm\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{458CD528-14BC-582B-6F01-0BEBFC8E582C}|..\\BlazorWASM\\BlazorWASM.csproj|c:\\users\\falau\\source\\repos\\manageproductsapp\\blazorwasm\\model\\productitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\falau\\source\\repos\\ManageProductsApp\\Produse\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\falau\\source\\repos\\ManageProductsApp\\Produse\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T12:48:37.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CleanProductsJob.cs",
+              "DocumentMoniker": "C:\\Users\\falau\\source\\repos\\ManageProductsApp\\Produse\\CleanProductsJob.cs",
+              "RelativeDocumentMoniker": "CleanProductsJob.cs",
+              "ToolTip": "C:\\Users\\falau\\source\\repos\\ManageProductsApp\\Produse\\CleanProductsJob.cs",
+              "RelativeToolTip": "CleanProductsJob.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T12:46:14.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductItemsController.cs",
+              "DocumentMoniker": "C:\\Users\\falau\\source\\repos\\ManageProductsApp\\Produse\\Controllers\\ProductItemsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductItemsController.cs",
+              "ToolTip": "C:\\Users\\falau\\source\\repos\\ManageProductsApp\\Produse\\Controllers\\ProductItemsController.cs",
+              "RelativeToolTip": "Controllers\\ProductItemsController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwDsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T12:43:43.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductItem.cs",
+              "DocumentMoniker": "C:\\Users\\falau\\source\\repos\\ManageProductsApp\\BlazorWASM\\Model\\ProductItem.cs",
+              "RelativeDocumentMoniker": "..\\BlazorWASM\\Model\\ProductItem.cs",
+              "ToolTip": "C:\\Users\\falau\\source\\repos\\ManageProductsApp\\BlazorWASM\\Model\\ProductItem.cs",
+              "RelativeToolTip": "..\\BlazorWASM\\Model\\ProductItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T12:39:05.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\falau\\source\\repos\\ManageProductsApp\\BlazorWASM\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "..\\BlazorWASM\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\falau\\source\\repos\\ManageProductsApp\\BlazorWASM\\Pages\\Home.razor",
+              "RelativeToolTip": "..\\BlazorWASM\\Pages\\Home.razor",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-30T12:39:01.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ManageProductsDialog.razor",
+              "DocumentMoniker": "C:\\Users\\falau\\source\\repos\\ManageProductsApp\\BlazorWASM\\Pages\\ManageProductsDialog.razor",
+              "RelativeDocumentMoniker": "..\\BlazorWASM\\Pages\\ManageProductsDialog.razor",
+              "ToolTip": "C:\\Users\\falau\\source\\repos\\ManageProductsApp\\BlazorWASM\\Pages\\ManageProductsDialog.razor",
+              "RelativeToolTip": "..\\BlazorWASM\\Pages\\ManageProductsDialog.razor",
+              "ViewState": "AgIAACkAAAAAAAAAAAAlwCwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-30T12:39:00.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\falau\\source\\repos\\ManageProductsApp\\BlazorWASM\\Program.cs",
+              "RelativeDocumentMoniker": "..\\BlazorWASM\\Program.cs",
+              "ToolTip": "C:\\Users\\falau\\source\\repos\\ManageProductsApp\\BlazorWASM\\Program.cs",
+              "RelativeToolTip": "..\\BlazorWASM\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T12:38:57.058Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

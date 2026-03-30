@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "RUN",
+    "Projects": [
+      {
+        "Path": "ProductWebAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\BlazorWASM\\BlazorWASM.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

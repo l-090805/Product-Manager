@@ -1,0 +1,88 @@
+﻿@page "/"
+
+@using BlazorWASM.Models
+@inject DialogService DialogService
+@inject NotificationService NotificationService
+@inject HttpClient httpClient
+
+<PageTitle>Home</PageTitle>
+
+<h2 class="pt-5">Manage Products</h2>
+
+<div>
+	<RadzenButton Click="Add" Icon="add" Text="Add new product" ButtonStyle="ButtonStyle.Primary" class="mb-2"/>
+	<RadzenDataGrid Data="products" TItem="ProductItem" ColumnWidth="200px">
+		<Columns>
+			<RadzenDataGridColumn TItem="ProductItem" Property="Name" Title="Name"/>
+			<RadzenDataGridColumn TItem="ProductItem" Property="Price" Title="Price" FormatString="{0:C}" />
+			<RadzenDataGridColumn TItem="ProductItem" Property="Stock" Title="Stock" />
+			<RadzenDataGridColumn TItem="ProductItem" Property="Id" Title="Id" />
+			<RadzenDataGridColumn Width ="160" Title ="Actions">
+				<Template Context="data">
+					<RadzenButton ButtonStyle="ButtonStyle.Warning" Icon="edit"
+									Click ="@(() => Update(data.Id))" Text="Edit"/>
+
+					<RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete"
+								  Click="@(() => Delete(data.Id))" Text="Delete" />
+				</Template>
+			</RadzenDataGridColumn>
+		</Columns>
+	</RadzenDataGrid>
+</div>
+
+@code{
+	private List<ProductItem> products = new();
+
+	protected override async Task OnInitializedAsync()
+	{
+		await GetProducts();
+	}
+	private async Task GetProducts()
+	{
+		products = await httpClient.GetFromJsonAsync<List<ProductItem>>("api/ProductItems");
+	}
+	private async Task Add()
+	{
+		var result = await DialogService.OpenSideAsync<ManageProductsDialog>
+		(
+			"Add product",
+			options: new SideDialogOptions { Position = DialogPosition.Right }
+		);
+
+		if (result == true) await GetProducts();
+	}
+	private async Task Update(int id)
+	{
+		var result = await DialogService.OpenSideAsync<ManageProductsDialog>
+		(
+			"Update product",
+			parameters: new Dictionary<string, object?>() { { "Id", id } },
+			options: new SideDialogOptions { Position = DialogPosition.Right }
+
+		);
+
+		if (result == true) await GetProducts();
+	}
+	private async Task Delete(int id)
+	{
+		var isConfirmed = await DialogService.Confirm("Are you sure you want to delete this product?","Warning"
+						,new ConfirmOptions() {OkButtonText = "Yes", CancelButtonText="No"});
+
+		if (isConfirmed == null || isConfirmed == false) return;
+
+		var result = await httpClient.DeleteAsync("api/ProductItems/" + id);
+		if (result.IsSuccessStatusCode)
+		{
+			NotificationService.Notify(NotificationSeverity.Success, "Succes", "Product deleted succesfully");
+			await GetProducts();
+		}
+		else
+		{
+			NotificationService.Notify(NotificationSeverity.Error, "Failed", "Failed to delete product");
+		}
+
+	}
+
+}
+
+

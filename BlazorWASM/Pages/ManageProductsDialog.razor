@@ -1,0 +1,75 @@
+﻿@using BlazorWASM.Models
+@inject DialogService DialogService
+@inject NotificationService NotificationService
+@inject HttpClient httpClient
+
+<EditForm Model="productItem" OnSubmit="Submit">
+	<div class="mb-3">
+		<label class="form-label"> Name </label>
+		<InputText @bind-Value="@productItem.Name" class="form-control" />
+	</div>
+	<div class="mb-3">
+		<label class="form-label"> Price </label>
+		<InputNumber @bind-Value="@productItem.Price" class="form-control" />
+	</div>
+	<div class="mb-3">
+		<label class="form-label"> Stock </label>
+		<InputNumber @bind-Value="@productItem.Stock" class="form-control" />
+	</div>
+	<div class="mb-3">
+		<label class="form-label"> Id </label>
+		<InputNumber @bind-Value="@productItem.Id" class="form-control" />
+	</div>
+	<div class="mb-3">
+		<RadzenButton Text="Submit" ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit"/>
+		<RadzenButton Text ="Cancel" Click="() => DialogService.CloseSide()" ButtonStyle="ButtonStyle.Danger" ButtonType="ButtonType.Button"/>
+	</div>
+</EditForm>
+
+@code{
+	public ProductItem productItem { get; set; } = new();
+
+	[Parameter] public int? Id{ get; set; }
+
+	protected override async Task OnInitializedAsync()
+	{
+		if (Id.HasValue)
+		{
+			var result = await httpClient.GetFromJsonAsync<ProductItem>("api/ProductItems/" + Id);
+			if (result != null) productItem = result;
+			else NotificationService.Notify(NotificationSeverity.Error, "Failed", "Failed finding product by id" + Id);
+
+		}
+	}
+
+	private async Task Submit()
+	{
+		if (Id.HasValue)
+		{
+			var result = await httpClient.PutAsJsonAsync($"api/ProductItems/{Id}", productItem);
+			if (result.IsSuccessStatusCode)
+			{
+				NotificationService.Notify(NotificationSeverity.Success, "Succes", "Product updated succesfully");
+				DialogService.CloseSide(true);
+			}
+			else
+			{
+				NotificationService.Notify(NotificationSeverity.Error, "Failed", "Failed to update product");
+			}
+		}
+		else
+		{
+			var result = await httpClient.PostAsJsonAsync("api/ProductItems", productItem);
+			if (result.IsSuccessStatusCode)
+			{
+				NotificationService.Notify(NotificationSeverity.Success, "Succes", "Product added succesfully");
+				DialogService.CloseSide(true);
+			}
+			else
+			{
+				NotificationService.Notify(NotificationSeverity.Error, "Failed", "Failed to add product");
+			}
+		}
+
+	}
+}

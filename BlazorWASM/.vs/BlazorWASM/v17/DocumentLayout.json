@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\falau\\source\\repos\\ManageProductsApp\\BlazorWASM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C130AD78-5381-25F8-31BC-8D6ABC8C689E}|BlazorWASM.csproj|c:\\users\\falau\\source\\repos\\manageproductsapp\\blazorwasm\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C130AD78-5381-25F8-31BC-8D6ABC8C689E}|BlazorWASM.csproj|solutionrelative:pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C130AD78-5381-25F8-31BC-8D6ABC8C689E}|BlazorWASM.csproj|c:\\users\\falau\\source\\repos\\manageproductsapp\\blazorwasm\\pages\\managemenudialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C130AD78-5381-25F8-31BC-8D6ABC8C689E}|BlazorWASM.csproj|solutionrelative:pages\\managemenudialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ManageMenuDialog.razor",
+              "DocumentMoniker": "C:\\Users\\falau\\source\\repos\\ManageProductsApp\\BlazorWASM\\Pages\\ManageMenuDialog.razor",
+              "RelativeDocumentMoniker": "Pages\\ManageMenuDialog.razor",
+              "ToolTip": "C:\\Users\\falau\\source\\repos\\ManageProductsApp\\BlazorWASM\\Pages\\ManageMenuDialog.razor",
+              "RelativeToolTip": "Pages\\ManageMenuDialog.razor",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwDkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-20T10:21:51.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\falau\\source\\repos\\ManageProductsApp\\BlazorWASM\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\falau\\source\\repos\\ManageProductsApp\\BlazorWASM\\Pages\\Home.razor",
+              "RelativeToolTip": "Pages\\Home.razor",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-20T10:14:40.355Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
